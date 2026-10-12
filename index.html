@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>The Periodic Table — 118 Elements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Elemental home"><span class="brand-mark">E</span><span>ELEMENTAL<span class="brand-dot">.</span></span></a>
+      <span class="top-note"><span class="live-dot"></span> THE ELEMENTS, ORGANIZED</span>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">A FIELD GUIDE TO MATTER</p>
+        <h1>The periodic<br><span>table.</span></h1>
+        <p class="intro">Every known element, arranged by the patterns that make our universe.</p>
+      </div>
+      <div class="hero-meta"><span class="orbit">118</span><span>ELEMENTS<br>AND COUNTING</span></div>
+    </section>
+
+    <section class="controls" aria-label="Find an element">
+      <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search by name, symbol, number…" autocomplete="off" aria-label="Search elements"><kbd>/</kbd></label>
+      <span id="result-count" class="result-count">118 of 118 elements</span>
+      <button id="clear-search" class="clear-button" type="button">Clear search</button>
+    </section>
+
+    <section class="table-wrap" aria-label="Periodic table of elements">
+      <div id="periodic-table" class="periodic-table"></div>
+    </section>
+
+    <section class="legend" aria-label="Element categories">
+      <p class="legend-title">ELEMENT CATEGORIES</p>
+      <div class="legend-items">
+        <span><i class="swatch alkali"></i>Alkali metal</span><span><i class="swatch alkaline"></i>Alkaline earth</span><span><i class="swatch transition"></i>Transition metal</span><span><i class="swatch post"></i>Post-transition</span><span><i class="swatch metalloid"></i>Metalloid</span><span><i class="swatch nonmetal"></i>Reactive nonmetal</span><span><i class="swatch halogen"></i>Halogen</span><span><i class="swatch noble"></i>Noble gas</span><span><i class="swatch lanthanoid"></i>Lanthanide</span><span><i class="swatch actinoid"></i>Actinide</span><span><i class="swatch unknown"></i>Unknown properties</span>
+      </div>
+    </section>
+
+    <section id="detail" class="detail-panel" aria-live="polite">
+      <div class="detail-empty"><span class="detail-spark">✳</span><p>Select an element to explore its details.</p></div>
+    </section>
+
+    <footer><span>THE PERIODIC TABLE</span><span>118 ELEMENTS · ONE UNIVERSE</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
